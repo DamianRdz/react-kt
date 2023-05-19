@@ -26,6 +26,6 @@ const { reducer, actions } = counterSlice;
 
 export const { increment, decrement } = actions;
 
-export const selectCounter = (state: RootState) => state.counter;
+export const selectCounter = (state: RootState) => state.count.counter;
 
 export default reducer;

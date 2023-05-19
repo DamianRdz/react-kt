@@ -1,14 +1,8 @@
 import React from "react";
-
-export type User = {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-};
+import { User as UserModel } from "../../store/slices/Users";
 
 type Props = {
-  user: User;
+  user: UserModel;
 };
 
 const User = ({ user }: Props) => {
